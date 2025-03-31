@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
+import axios from 'axios';
 
 function Mainpage() {
   //State for the form fill
@@ -8,6 +9,7 @@ function Mainpage() {
   const [targetCurrency, setTargetCurrency] = useState("");
   const [amountInSourceCurrency, setAmountInSourceCurrency] = useState();
   const [amountInTargetCurrency, setAmountInTargetCurrency] = useState(0);
+  const [currencyNames,setCurrencyNames] = useState([]);
 
 
   //handle submit method
@@ -20,6 +22,25 @@ function Mainpage() {
       amountInSourceCurrency
     );
   };
+
+
+//get all currency names
+useEffect(() => {
+  const getCurrencyNames = async () => {
+    try {
+      const response = await axios.get('https://localhost:5000/getAllCurrencies'); 
+      const currencyNames = response.data; 
+      console.log(currencyNames); 
+      setCurrencyNames(response.data);
+    } catch (err) {
+      console.error('Error fetching currency names:', err);
+    }
+  };
+
+  getCurrencyNames(); 
+
+}, []);
+
 
   return (
     <div>
