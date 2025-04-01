@@ -63,7 +63,7 @@ function Mainpage() {
          Convert Your Currencies Today
        </h1>
        <p style={{marginLeft: '32px'}} className="font-sm opacity-40 py-6">
-         Welcome to "Convert Your Currencies Today"! This application allows you
+         Welcome to " Convert Your Currencies Today ". This application allows you
          to easily convert currencies based on the latest exchange rates. Whether
          you're planning a trip, managing your finances, or simply curious about
          the value of your money in different currencies, this tool is here to
@@ -74,7 +74,7 @@ function Mainpage() {
            <form onSubmit={getTheTargetAmount}>
              <div style={{marginBottom: '1rem'}}>
                <label
-                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: '#374151'}}
+                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="date"
                >
                  Date
@@ -92,7 +92,7 @@ function Mainpage() {
  
              <div style={{marginBottom: '1rem'}}>
                <label
-                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: '#374151'}}
+                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="sourceCurrency"
                >
                  Source Currency
@@ -117,7 +117,7 @@ function Mainpage() {
  
              <div style={{marginBottom: '1rem'}}>
                <label
-                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: '#374151'}}
+                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="targetCurrency"
                >
                  Target Currency
@@ -141,7 +141,7 @@ function Mainpage() {
  
              <div style={{marginBottom: '1rem'}}>
                <label
-                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: '#374151'}}
+                 style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="amountInSourceCurrency"
                >
                  Amount in source currency
