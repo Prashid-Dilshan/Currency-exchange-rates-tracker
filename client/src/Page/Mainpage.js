@@ -77,7 +77,7 @@ function Mainpage() {
                  style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="date"
                >
-                 Date
+                 Date :
                </label>
                <input
                  required
@@ -95,7 +95,7 @@ function Mainpage() {
                  style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="sourceCurrency"
                >
-                 Source Currency
+                 Source Currency :
                </label>
  
                <select
@@ -105,7 +105,7 @@ function Mainpage() {
                  name="sourceCurrency"
                  id="sourceCurrency"
                >
-                 <option value="">Select source currency</option>{" "}
+                 <option value="">Select source currency </option>{" "}
                  {/* Default empty option */}
                  {Object.keys(currencyNames).map((currency) => (
                    <option style={{padding: '0.25rem'}} key={currency} value={currency}>
@@ -120,7 +120,7 @@ function Mainpage() {
                  style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="targetCurrency"
                >
-                 Target Currency
+                 Target Currency :
                </label>
                <select
                  value={targetCurrency} // Set the selected value
@@ -129,7 +129,7 @@ function Mainpage() {
                  name="sourceCurrency"
                  id="sourceCurrency"
                >
-                 <option value="">Select target currency</option>{" "}
+                 <option value="">Select target currency </option>{" "}
                  {/* Default empty option */}
                  {Object.keys(currencyNames).map((currency) => (
                    <option style={{padding: '0.25rem'}} key={currency} value={currency}>
@@ -144,7 +144,7 @@ function Mainpage() {
                  style={{marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: 'red'}}
                  htmlFor="amountInSourceCurrency"
                >
-                 Amount in source currency
+                 Amount :
                </label>
                <input
                  required
@@ -153,7 +153,7 @@ function Mainpage() {
                  type="number"
                  name="amountInSourceCurrency"
                  id="amountInSourceCurrency"
-                 placeholder="Amount in source currency..."
+                 placeholder="Amount in source currency"
                />
              </div>
  
@@ -164,7 +164,7 @@ function Mainpage() {
          </section>
          <h3 style={{paddingTop: '1.25rem', fontSize: '1rem'}} className="flex items-center justify-start py-5 text-lg">
            {pressed ? (
-             <div>
+             <div className="result">
                <span style={{fontSize: '1.25rem'}} className="text-xl"> {amountInSourceCurrency}</span>{" "}
                {sourceCurrencyName} is equal to
                <span style={{fontSize: '1.25rem', fontWeight: 'bold', color: '#34D399'}}>
