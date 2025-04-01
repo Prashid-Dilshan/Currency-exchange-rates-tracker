@@ -21,7 +21,9 @@ body {
 h1 {
   color: #00ff6a;
   margin-bottom: 40px;
-  
+  margin-top: 60px;
+  padding-left: 350px;
+  font-size: 3rem;
 }
 
 /* Form inputs */
